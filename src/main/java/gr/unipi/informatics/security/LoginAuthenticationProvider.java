@@ -27,9 +27,9 @@ public class LoginAuthenticationProvider implements AuthenticationProvider {
                 if (authorities.stream().findFirst().get().toString().equals("Admin")) {
                     return "redirect:/admin";
                 } else if (authorities.stream().findFirst().get().toString().equals("Teacher")) {
-                    return "redirect:/teacher";
+                    return "redirect:/teacher/dashboard";
                 } else if (authorities.stream().findFirst().get().toString().equals("Student")){
-                    return "redirect:/student";
+                    return "redirect:/student/dashboard";
                 }
             }
         }

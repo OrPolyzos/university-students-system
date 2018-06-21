@@ -25,6 +25,9 @@ public class UserCourse {
     @JoinColumn(name = "CourseID", nullable = false, updatable = false, insertable = false)
     private Course course;
 
+    @Column(name = "Grade")
+    private Long grade;
+
     public Long getUserID() {
         return userID;
     }
@@ -63,5 +66,13 @@ public class UserCourse {
 
     public void setCourse(Course course) {
         this.course = course;
+    }
+
+    public Long getGrade() {
+        return grade;
+    }
+
+    public void setGrade(Long grade) {
+        this.grade = grade;
     }
 }

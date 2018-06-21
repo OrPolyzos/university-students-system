@@ -3,7 +3,6 @@ package gr.unipi.informatics.services;
 import gr.unipi.informatics.domain.User;
 import gr.unipi.informatics.domain.UserCourse;
 import gr.unipi.informatics.exceptions.user.DuplicateUserException;
-import gr.unipi.informatics.exceptions.user.UserException;
 import gr.unipi.informatics.exceptions.user.UserNotFoundException;
 import gr.unipi.informatics.repositories.UserCourseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +17,6 @@ public class UserCourseServiceImpl implements UserCourseService {
 
     @Autowired
     private UserCourseRepository userCourseRepository;
-
     @Autowired
     private UserService userService;
 
@@ -35,6 +33,11 @@ public class UserCourseServiceImpl implements UserCourseService {
     @Override
     public List<UserCourse> findAllByCourseID(Long courseID) {
         return userCourseRepository.findAllByCourseID(courseID);
+    }
+
+    @Override
+    public UserCourse findByUserIDAndCourseID(Long userID, Long courseID) {
+        return userCourseRepository.findByUserIDAndCourseID(userID, courseID);
     }
 
     @Override

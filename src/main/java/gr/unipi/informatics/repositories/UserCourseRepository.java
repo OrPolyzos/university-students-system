@@ -16,6 +16,8 @@ public interface UserCourseRepository extends CrudRepository<UserCourse, UserCou
 
     List<UserCourse> findAllByCourseID(Long courseID);
 
+    UserCourse findByUserIDAndCourseID(Long userID, Long courseID);
+
     UserCourse save(UserCourse userCourse);
 
     void deleteByUserIDAndCourseID(Long userID, Long courseID);

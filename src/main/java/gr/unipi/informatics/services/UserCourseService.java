@@ -14,6 +14,8 @@ public interface UserCourseService {
 
     List<UserCourse> findAllByCourseID(Long partID);
 
+    UserCourse findByUserIDAndCourseID(Long userID, Long courseID);
+
     void save(UserCourse repairPart) throws DuplicateUserException, UserNotFoundException;
 
     void deleteByUserIDAndCourseID(Long repairID, Long CourseID) throws DuplicateUserException, UserNotFoundException;

@@ -1,5 +1,6 @@
 package gr.unipi.informatics.security;
 
+import gr.unipi.informatics.domain.User;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.web.RedirectStrategy;
@@ -16,8 +17,8 @@ import java.util.Collection;
 public class LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
 
     private String ADMIN_SUCCESS_URI = "/admin";
-    private String TEACHER_SUCCESS_URI = "/teacher";
-    private String STUDENT_SUCCESS_URI = "/student";
+    private String TEACHER_SUCCESS_URI = "/teacher/dashboard";
+    private String STUDENT_SUCCESS_URI = "/student/dashboard";
 
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
 
