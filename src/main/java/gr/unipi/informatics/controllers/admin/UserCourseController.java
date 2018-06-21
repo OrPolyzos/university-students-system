@@ -49,7 +49,7 @@ public class UserCourseController {
         //If our Model does not contain a repairPartForm, add a new RepairPartForm()
         if (!map.containsKey(USER_COURSE_FORM)) {
             UserCourseForm userCourseForm = new UserCourseForm();
-            userCourseForm.setUserID(userID);
+            userCourseForm.setUserID(String.valueOf(userID));
             model.addAttribute(USER_COURSE_FORM, userCourseForm);
         }
         List<UserCourse> currentUserCourseList = userCourseService.findAllByUserID(userID);

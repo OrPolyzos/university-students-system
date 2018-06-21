@@ -8,30 +8,30 @@ import javax.validation.constraints.Size;
 
 public class UserCourseForm {
 
-    private Long userID;
+    private String userID;
 
     @NotNull(message = "This field is required!")
     @Pattern(regexp = "^[1-9]|[1-9][0-9]{1,9}", message = "The courseID must be equal or greater than 1!")
-    private Long courseID;
+    private String courseID;
 
     @NotNull(message = "This field is required!")
     @Size(min = 6, max = 16, message = "The room must be up to 6!")
     @Pattern(regexp = "^[a-zA-Z0-9 ]{6}", message = "The room can contain alphanumerical characters!")
     private String room;
 
-    public Long getUserID() {
+    public String getUserID() {
         return userID;
     }
 
-    public void setUserID(Long userID) {
+    public void setUserID(String userID) {
         this.userID = userID;
     }
 
-    public Long getCourseID() {
+    public String getCourseID() {
         return courseID;
     }
 
-    public void setCourseID(Long courseID) {
+    public void setCourseID(String courseID) {
         this.courseID = courseID;
     }
 

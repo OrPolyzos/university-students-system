@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="877f3228-811c-4d5c-967a-6604dcebcb94" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/navbar.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/navbar.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/controllers/admin/UserCourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/controllers/admin/UserCourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/converters/UserCourseConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/converters/UserCourseConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/model/UserCourseForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/model/UserCourseForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,20 +33,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TeacherController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/controllers/teacher/TeacherController.java">
+      <file leaf-file-name="data.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="90" column="96" selection-start-line="90" selection-start-column="96" selection-end-line="90" selection-end-column="96" />
+            <state relative-caret-position="17">
+              <caret line="3" column="61" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+            <state relative-caret-position="85">
+              <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-end-line="5" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserCourseForm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/model/UserCourseForm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserCourseController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/controllers/admin/UserCourseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="51" column="61" lean-forward="true" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserCourseConverter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/converters/UserCourseConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserCourse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/domain/UserCourse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -57,11 +96,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.ftl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navbar.ftl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/navbar.ftl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
               <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/controllers/admin/UsersController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1122">
+              <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -121,7 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/templates/students.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/model/UserForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/controllers/UsersController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/editUser.ftl" />
@@ -144,11 +191,8 @@
         <option value="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/controllers/admin/UserCoursesController.java" />
         <option value="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/repositories/UserCoursesRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/services/RepairPartService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/model/UserCourseForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/converters/UserCourseConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/services/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/controllers/admin/UsersController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/controllers/admin/UserCourseController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/users.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/userCourses.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/controllers/student/CoursesController.java" />
@@ -172,6 +216,10 @@
         <option value="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/controllers/teacher/TeacherController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/teacherGradesPerStudent.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/navbar.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/model/UserCourseForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/controllers/admin/UserCourseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gr/unipi/informatics/converters/UserCourseConverter.java" />
       </list>
     </option>
   </component>
@@ -263,7 +311,26 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="informatics" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="piraeus-university" type="b2602c69:ProjectViewProjectNode" />
+              <item name="piraeus-university" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="informatics" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="piraeus-university" type="b2602c69:ProjectViewProjectNode" />
+              <item name="piraeus-university" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="informatics" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="piraeus-university" type="b2602c69:ProjectViewProjectNode" />
@@ -469,7 +536,7 @@
       <workItem from="1529529776817" duration="10043000" />
       <workItem from="1529556051502" duration="6822000" />
       <workItem from="1529591751193" duration="271000" />
-      <workItem from="1529615931594" duration="57000" />
+      <workItem from="1529615931594" duration="815000" />
     </task>
     <task id="LOCAL-00001" summary="Project upload">
       <created>1527374150286</created>
@@ -478,11 +545,25 @@
       <option name="project" value="LOCAL" />
       <updated>1527374150287</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Project upload">
+      <created>1529616142308</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1529616142308</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Project upload">
+      <created>1529616154276</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1529616154276</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45497000" />
+    <option name="totallyTimeSpent" value="46255000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -505,6 +586,7 @@
       <window_info anchor="bottom" id="Debug" order="6" weight="0.5107438" />
       <window_info anchor="bottom" id="TODO" order="9" />
       <window_info id="DB Browser" order="8" />
+      <window_info anchor="bottom" id="Messages" order="13" visible="true" weight="0.059504133" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="9" />
       <window_info anchor="bottom" id="Java Enterprise" order="1" />
@@ -512,7 +594,7 @@
       <window_info anchor="bottom" id="Run" order="5" weight="0.37685952" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="bottom" id="Spring" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="15" sideWeight="0.49848714" visible="true" weight="0.34214875" />
+      <window_info anchor="bottom" id="Terminal" order="15" sideWeight="0.49848714" weight="0.34214875" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2322239" />
       <window_info anchor="right" id="Bean Validation" order="0" />
       <window_info id="Web" order="0" side_tool="true" />
@@ -523,7 +605,6 @@
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info id="MaxCompute Project Explorer" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.059504133" />
       <window_info anchor="right" id="FAQ Robot" order="10" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.3289256" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
@@ -707,20 +788,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/domain/RepairPart.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/model/UserCourseForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/converters/UserCourseConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/repositories/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -742,24 +809,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/controllers/admin/UsersController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/model/UserForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/controllers/admin/UserCourseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -860,9 +913,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentDashboard.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -874,13 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="45" column="102" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/domain/UserCourse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -940,13 +983,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/adminIndex.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -958,6 +994,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/controllers/admin/UsersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1122">
+          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" column="61" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/model/UserCourseForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/controllers/admin/UserCourseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="51" column="61" lean-forward="true" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/domain/UserCourse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gr/unipi/informatics/converters/UserCourseConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
