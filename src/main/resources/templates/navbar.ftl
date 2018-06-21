@@ -20,9 +20,6 @@
                     <a href="/admin/courses">Courses</a>
                 </li>
                 <li>
-                    <a href="/admin/teachers">Students</a>
-                </li>
-                <li>
                     <a href="/logout">Logout</a>
                 </li>
             </ul>
