@@ -1,5 +1,8 @@
-target
-!.mvn/wrapper/maven-wrapper.jar
+### Maven ###
+.mvn/
+mvnw.cmd
+mvnw
+target/
 
 ### STS ###
 .apt_generated
@@ -8,19 +11,17 @@ target
 .project
 .settings
 .springBeans
-.sts4-cache
 
 ### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
-*/target/
 
 ### NetBeans ###
-/nbproject/private/
-/build/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
