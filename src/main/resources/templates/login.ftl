@@ -15,58 +15,59 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">Piraeus University</a>
-            </div>
-        </div>
-    </nav>
-
-    <h2>${message!""}</h2>
-    <h2 class="errorRed">${errorMessage!""}</h2>
+<nav class="navbar navbar-inverse">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h1>Sign In</h1>
-                    <form action="/login" method="post" id="loginForm" name="loginForm" style="text-align:center">
-                        <div class="form-group">
-                            <label for="username">Email</label>
-                                <div class="input-group">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">University Student System</a>
+        </div>
+    </div>
+</nav>
+
+<h2>${message!""}</h2>
+<h2 class="errorRed">${errorMessage!""}</h2>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h1>Sign In</h1>
+            <form action="/login" method="post" id="loginForm" name="loginForm" style="text-align:center">
+                <div class="form-group">
+                    <label for="username">Email</label>
+                    <div class="input-group">
                                     <span class="input-group-addon">
                                         <i class="glyphicon glyphicon-user"></i>
                                     </span>
-                                    <input type="text" class="form-control" id="username" name="username">
-                                </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                                <div class="input-group">
+                        <input type="text" class="form-control" id="username" name="username">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-group">
                                     <span class="input-group-addon">
                                         <i class="glyphicon glyphicon-lock"></i>
                                     </span>
-                                    <input type="password" class="form-control" id="password" name="password">
-                                </div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-success btn-lg btn-block">Login!</button>
-                        </div>
-                    </form>
-            </div>
+                        <input type="password" class="form-control" id="password" name="password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-lg btn-block">Login!</button>
+                </div>
+            </form>
         </div>
     </div>
+</div>
 
-    <#include "footer.ftl">
+<#include "footer.ftl">
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 </body>
 </html>

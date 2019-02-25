@@ -1,27 +1,27 @@
-body{
-     background-color: rgb(51,51,51);
-     text-align: center;
-     color: white;
-     position: relative;
-     z-index: -30;
+body {
+    background-color: rgb(51, 51, 51);
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: -30;
 }
 
 body.IMAGE {
-background: url(../Images/extremeperformance.png) no-repeat center center fixed;
-         -webkit-background-size: cover;
-         -moz-background-size: cover;
-         -o-background-size: cover;
-         background-size: cover;
-         background-color: rgb(100,100,100);
-         z-index: -30;
+    background: url(../Images/extremeperformance.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgb(100, 100, 100);
+    z-index: -30;
 }
 
 #mainNavBar a:hover {
     color: orange;
-    }
+}
 
 h3 {
-  text-align: center;
+    text-align: center;
 }
 
 
@@ -39,8 +39,9 @@ legend {
 button {
     color: black;
 }
+
 input {
-    color:black;
+    color: black;
 }
 
 form.Search {
@@ -55,7 +56,7 @@ form.Search {
 
 
 .table th, td {
-  text-align: center;
+    text-align: center;
 }
 
 .table th {

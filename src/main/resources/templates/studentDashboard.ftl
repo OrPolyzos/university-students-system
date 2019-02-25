@@ -20,24 +20,24 @@
 <body>
 <#include "studentNavbar.ftl">
 <h1 class="errorRed">${errorMessage!""}</h1>
-        <#if user??>
-            <h1>Welcome to Piraeus Unversity dear ${user.firstName!"student"}!</h1>
-            <#if user.userCourses??>
-                <h3><u>Retrieved Courses</u></h3>
-                <div class="table-responsive">
-                    <table id="resultsTable" class="table">
-                        <thead>
-                        <tr>
-                            <th>Course Id</th>
-                            <th>Title</th>
-                            <th>Semester</th>
-                            <th>Grade</th>
-                            <th>Room</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <#list user.userCourses as userCourse>
-                            <span>
+<#if user??>
+    <h1>Welcome to Unversity dear ${user.firstName!"student"}!</h1>
+    <#if user.userCourses??>
+        <h3><u>Retrieved Courses</u></h3>
+        <div class="table-responsive">
+            <table id="resultsTable" class="table">
+                <thead>
+                <tr>
+                    <th>Course Id</th>
+                    <th>Title</th>
+                    <th>Semester</th>
+                    <th>Grade</th>
+                    <th>Room</th>
+                </tr>
+                </thead>
+                <tbody>
+                <#list user.userCourses as userCourse>
+                    <span>
                                     <tr>
                                         <td>${userCourse.course.courseID!"Could not retrieve value!"}</td>
                                         <td>${userCourse.course.title!"Could not retrieve value!"}</td>
@@ -46,13 +46,13 @@
                                         <td>${userCourse.room!"Could not retrieve value!"}</td>
                                     </tr>
                                 </span>
-                            </#list>
-                        </tbody>
-                    </table>
-                </div>
-            <hr/>
-            </#if>
-            <#include "footer.ftl">
-        </#if>
+                </#list>
+                </tbody>
+            </table>
+        </div>
+        <hr/>
+    </#if>
+    <#include "footer.ftl">
+</#if>
 </body>
 </html>

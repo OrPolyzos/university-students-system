@@ -20,47 +20,47 @@
 <body>
 <#include "teacherNavbar.ftl">
 <h1 class="errorRed">${errorMessage!""}</h1>
-        <#if user??>
-            <h1>Welcome to Piraeus University dear ${user.firstName!"teacher"}!</h1>
-            <#if userCourses??>
-                <h3><u>Retrieved Courses</u></h3>
-                <#if semester == 1>
-                <form action="/teacher/semester/${semesterPlusOne}" method="GET">
-                    <button value="Next Semester" type="submit" class="btn btn-success">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </button>
-                </form>
-                <#elseif semester == 8>
-                <form action="/teacher/semester/${semesterMinusOne}" method="GET">
-                    <button value="Previous Semester" type="submit" class="btn btn-success">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </button>
-                </form>
-                <#else>
-                <form action="/teacher/semester/${semesterPlusOne}" method="GET">
-                    <button value="Next Semester" type="submit" class="btn btn-success">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </button>
-                </form>
-                <form action="/teacher/semester/${semesterMinusOne}" method="GET">
-                    <button value="Previous Semester" type="submit" class="btn btn-success">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </button>
-                </form>
-                </#if>
-                <div class="table-responsive">
-                    <table id="resultsTable" class="table">
-                        <thead>
-                        <tr>
-                            <th>Course Id</th>
-                            <th>Title</th>
-                            <th>Semester</th>
-                            <th>Room</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <#list userCourses as userCourse>
-                            <span>
+<#if user??>
+    <h1>Welcome to University Student System dear ${user.firstName!"teacher"}!</h1>
+    <#if userCourses??>
+        <h3><u>Retrieved Courses</u></h3>
+        <#if semester == 1>
+            <form action="/teacher/semester/${semesterPlusOne}" method="GET">
+                <button value="Next Semester" type="submit" class="btn btn-success">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </button>
+            </form>
+        <#elseif semester == 8>
+            <form action="/teacher/semester/${semesterMinusOne}" method="GET">
+                <button value="Previous Semester" type="submit" class="btn btn-success">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </button>
+            </form>
+        <#else>
+            <form action="/teacher/semester/${semesterPlusOne}" method="GET">
+                <button value="Next Semester" type="submit" class="btn btn-success">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </button>
+            </form>
+            <form action="/teacher/semester/${semesterMinusOne}" method="GET">
+                <button value="Previous Semester" type="submit" class="btn btn-success">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </button>
+            </form>
+        </#if>
+        <div class="table-responsive">
+            <table id="resultsTable" class="table">
+                <thead>
+                <tr>
+                    <th>Course Id</th>
+                    <th>Title</th>
+                    <th>Semester</th>
+                    <th>Room</th>
+                </tr>
+                </thead>
+                <tbody>
+                <#list userCourses as userCourse>
+                    <span>
                                     <tr>
                                         <td>${userCourse.course.courseID!"Could not retrieve value!"}</td>
                                         <td>${userCourse.course.title!"Could not retrieve value!"}</td>
@@ -68,13 +68,13 @@
                                         <td>${userCourse.room!"Could not retrieve value!"}</td>
                                     </tr>
                                 </span>
-                            </#list>
-                        </tbody>
-                    </table>
-                </div>
-            <hr/>
-            </#if>
-            <#include "footer.ftl">
-        </#if>
+                </#list>
+                </tbody>
+            </table>
+        </div>
+        <hr/>
+    </#if>
+    <#include "footer.ftl">
+</#if>
 </body>
 </html>

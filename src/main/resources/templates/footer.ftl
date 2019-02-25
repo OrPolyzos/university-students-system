@@ -1,5 +1,5 @@
 <div>
-<footer>
-    <p>&copy; Piraeus University - Department of Informatics</p>
-</footer>
+    <footer>
+        <p>&copy; University Student System</p>
+    </footer>
 </div>

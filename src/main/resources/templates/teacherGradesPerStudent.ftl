@@ -20,24 +20,24 @@
 <body>
 <#include "teacherNavbar.ftl">
 <h1 class="errorRed">${errorMessage!""}</h1>
-        <#if user??>
-            <h1>This is the students list for the course ${course.title!"teacher"}!</h1>
-            <#if studentCourses??>
-                <h3><u>Retrieved Students</u></h3>
-                <div class="table-responsive">
-                    <table id="resultsTable" class="table">
-                        <thead>
-                        <tr>
-                            <th>Student Id</th>
-                            <th>Student First Name</th>
-                            <th>Student Last Name</th>
-                            <th>Grade</th>
-                            <th></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <#list studentCourses as studentCourse>
-                            <span>
+<#if user??>
+    <h1>This is the students list for the course ${course.title!"teacher"}!</h1>
+    <#if studentCourses??>
+        <h3><u>Retrieved Students</u></h3>
+        <div class="table-responsive">
+            <table id="resultsTable" class="table">
+                <thead>
+                <tr>
+                    <th>Student Id</th>
+                    <th>Student First Name</th>
+                    <th>Student Last Name</th>
+                    <th>Grade</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <#list studentCourses as studentCourse>
+                    <span>
                                     <tr>
                                         <td>${studentCourse.user.userID!"Could not retrieve value!"}</td>
                                         <td>${studentCourse.user.firstName!"Could not retrieve value!"}</td>
@@ -45,19 +45,20 @@
                                         <form action="/teacher/courses/${course.courseID}/students/${studentCourse.user.userID}"
                                               method="POST">
                                             <td>
-                                                <input type="number" id="grade" name="grade" placeholder="123456789" value="${studentCourse.grade!"-"}"/>
+                                                <input type="number" id="grade" name="grade" placeholder="123456789"
+                                                       value="${studentCourse.grade!"-"}"/>
                                             </td>
                                             <td><button type="submit" class="btn btn-success">Save</button></td>
                                         </form>
                                     </tr>
                                 </span>
-                            </#list>
-                        </tbody>
-                    </table>
-                </div>
-            <hr/>
-            </#if>
-            <#include "footer.ftl">
-        </#if>
+                </#list>
+                </tbody>
+            </table>
+        </div>
+        <hr/>
+    </#if>
+    <#include "footer.ftl">
+</#if>
 </body>
 </html>
